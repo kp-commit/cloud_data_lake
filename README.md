@@ -392,6 +392,6 @@ Goto Database (songsdl) > Tables, able see tables now:
 ##### 9. Verify Table count from Athena query:
 ![Refreshed database under Athena](images/4_Athena_Refressh_Database.png)
 Ran table count queries:
-![Athena - setup table count queries](/images/6_Athena_setup_queries)
+![Athena - setup table count queries](/images/6_Athena_setup_queries.png)
 Query results match up with CSV file in AllTblCnt folder
 ![Athena_row_count](/images/Athena_row_count.png)
