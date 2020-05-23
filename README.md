@@ -169,10 +169,10 @@ _partitioned by (year, artist_id)_
 
 
 ARTISTS:
->artist_id String
->name String
->location String
->latitude Float
+>artist_id String,
+>name String,
+>location String,
+>latitude Float,
 >longitude Float
 
 
