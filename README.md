@@ -161,51 +161,60 @@ The _on-demand_ EMR cluster is then **terminated**, leaving a **serverless** Dat
 
 SONGS:
 _partitioned by (year, artist_id)_
->song_id String,
->title String,
->artist_id String,
->year String,
->duration String
+```python
+song_id StringType(),
+title StringType(),
+artist_id StringType(),
+year StringType(),
+duration StringType()
+```
 
 
 ARTISTS:
->artist_id String,
->name String,
->location String,
->latitude Float,
->longitude Float
-
+```python
+artist_id StringType(),
+name StringType(),
+location StringType(),
+latitude FloatType(),
+longitude FloatType()
+```
 
 USERS:
->user_id String,
->first_name String,
->last_name String,
->gender String,
->level String
+```python
+user_id StringType(),
+first_name StringType(),
+last_name StringType(),
+gender StringType(),
+level StringType()
+```
 
 
 TIME:
-_partitioned by (year, month)_
->start_time Timestamp,
->hour Timestamp,
->day Timestamp,
->week Timestamp,
->month Timestamp,
->year Timestamp,
->weekday Timestamp
+_partitioned by (yearType(), month)_
+```python
+start_time TimestampType(),
+hour TimestampType(),
+day TimestampType(),
+week TimestampType(),
+month TimestampType(),
+year TimestampType(),
+weekday TimestampType()
+```
 
 #### Fact Table:
 
 SONGSPLAYS
->songplay_id (unique identifer with incremental value),
->start_time Timestamp,
->user_id String,
->level String,
->song_id Integer,
->artist_id String,
->session_id Integer, 
->location String,
->user_agent String
+```python
+songplay_id (unique identifer with incremental value),
+start_time TimestampType(),
+user_id StringType(),
+level StringType(),
+song_id IntegerType(),
+artist_id StringType(),
+session_id IntegerType(), 
+location StringType(),
+user_agent StringType()
+```
 
 ### Validation on (S3, Athena, Glue Serverless Services)
 ---
