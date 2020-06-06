@@ -1,5 +1,5 @@
 # Cloud Data Lake on AWS
-#### using S3, EMR, Spark, Boto3, Python, Hive, ETL, Athena, Glue
+#### using S3, EMR, Spark, Boto3, Python, Hadoop, Hive, Parquet, ETL, Athena, Glue
 ---
 
 ### Contents
