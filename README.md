@@ -271,7 +271,7 @@ For the scripts to work, the following need to be updated in config.py:
 
 #### 2. Setup three S3 buckets:
 **Note:** All should buckets in _US-WEST-2_ region (close to S3 input bucket, to _reduce network traffic in reads_)   
-- Create **1st** bucket for output_data: e.g. to be used in **s3://<bucket-name>/analytics/** this be used to store all tables created and their table counts.  
+- Create **1st** bucket for output_data: e.g. to be used in **s3://bucket-name/analytics/** this be used to store all tables created and their table counts.  
 - Create **2nd** bucket to host Spark files in S3. We'll call this **SPARK_SCRIPTS** which will be used by EMR cluster later e.g. s3://songdl-sparkfls
 - Create **3rd** bucket for Athena and Glue to store query results and data store files e.g. **s3://songdl-queries** 
 - Upload **etl.py** and **config.py** to S3 **SPARK_SCRIPTS** bucket location.  
